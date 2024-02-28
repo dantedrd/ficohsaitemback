@@ -1,13 +1,8 @@
 package com.ficohsa.item.infrastructure.adapter.h2;
 
-import com.ficohsa.item.domain.constants.StateAccount;
-import com.ficohsa.item.domain.constants.TypeAccounts;
-import com.ficohsa.item.domain.models.Account;
 import com.ficohsa.item.domain.models.Item;
 import com.ficohsa.item.domain.utils.UtilFuntion;
 import com.ficohsa.item.infrastructure.adapter.h2.models.ItemEntity;
-import com.ficohsa.item.infrastructure.entrypoints.controller.AccountController;
-import com.ficohsa.item.infrastructure.entrypoints.model.AccountRequest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -16,10 +11,8 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.domain.Pageable;
-import org.springframework.http.ResponseEntity;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

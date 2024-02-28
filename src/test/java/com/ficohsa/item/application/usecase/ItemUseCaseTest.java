@@ -1,15 +1,9 @@
 package com.ficohsa.item.application.usecase;
 
 import com.ficohsa.item.application.port.out.ItemRepository;
-import com.ficohsa.item.application.port.out.TransferRepository;
 import com.ficohsa.item.config.exception.CustomException;
 import com.ficohsa.item.config.exception.NotFoundException;
-import com.ficohsa.item.domain.constants.TypeTransfer;
 import com.ficohsa.item.domain.models.Item;
-import com.ficohsa.item.domain.models.Transfer;
-import com.ficohsa.item.domain.service.TransferService;
-import com.ficohsa.item.domain.utils.UtilFuntion;
-import com.ficohsa.item.infrastructure.adapter.h2.models.ItemEntity;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

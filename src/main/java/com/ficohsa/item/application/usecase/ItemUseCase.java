@@ -4,11 +4,8 @@ import com.ficohsa.item.application.port.out.ItemRepository;
 import com.ficohsa.item.config.exception.CustomException;
 import com.ficohsa.item.config.exception.NotFoundException;
 import com.ficohsa.item.domain.models.Item;
-
-import java.util.Optional;
 import java.util.regex.Pattern;
 import java.util.List;
-
 import static com.ficohsa.item.config.exception.SPError.*;
 
 public class ItemUseCase {

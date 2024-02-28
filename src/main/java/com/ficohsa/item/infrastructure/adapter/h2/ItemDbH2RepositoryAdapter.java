@@ -16,7 +16,7 @@ import java.util.Optional;
 @Repository
 public class ItemDbH2RepositoryAdapter implements ItemRepository {
 
-    private static final Logger logger = LoggerFactory.getLogger(AccountPostgresqlAdapter.class);
+    private static final Logger logger = LoggerFactory.getLogger(ItemDbH2RepositoryAdapter.class);
 
     private final ItemDbH2Repository itemDbH2Repository;
 

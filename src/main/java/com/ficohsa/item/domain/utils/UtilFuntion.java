@@ -10,16 +10,7 @@ import java.util.Date;
 
 public class UtilFuntion {
 
-    public static String transformLocalDateToString(LocalDate time){
-        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        String fechaHoraString = time.format(dateFormat);
-        return fechaHoraString;
-    }
-    public static String transformLocalDateTimeToString(LocalDateTime time){
-        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-        String fechaHoraString = time.format(dateFormat);
-        return fechaHoraString;
-    }
+
 
     public static LocalDate transformStringToLocalDate(String date){
         try {
@@ -30,14 +21,6 @@ public class UtilFuntion {
         }
     }
 
-    public static LocalDateTime transformStringToLocalDateTime(String date){
-        try {
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-            return LocalDateTime.parse(date, formatter);
-        }catch (DateTimeParseException dateTimeParseException){
-            throw new CustomException(SPError.INVALID_DATE_FORMAT.getErrorCode(),SPError.INVALID_DATE_FORMAT.getErrorMessage());
-        }
-    }
 
     public static LocalDateTime transformDateToLocalDateTime(Date time){
         Instant instant = time.toInstant();

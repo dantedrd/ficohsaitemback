@@ -1,17 +1,12 @@
 package com.ficohsa.item.infrastructure.entrypoints.controller;
 
-import com.ficohsa.item.application.usecase.CreateClientUseCase;
 import com.ficohsa.item.application.usecase.ItemUseCase;
-import com.ficohsa.item.domain.models.Client;
 import com.ficohsa.item.domain.models.Item;
-import com.ficohsa.item.infrastructure.entrypoints.model.ClientRequest;
 import com.ficohsa.item.infrastructure.entrypoints.model.GenericResponse;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
