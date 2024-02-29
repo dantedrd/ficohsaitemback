@@ -46,4 +46,8 @@ public class ItemUseCase {
                 .orElseThrow(() -> new NotFoundException(ITEM_NOT_FOUND.getErrorCode(),ITEM_NOT_FOUND.getErrorMessage()));
     }
 
+    public Item saveItem(Item item){
+        return this.repository.saveItem(item);
+    }
+
 }

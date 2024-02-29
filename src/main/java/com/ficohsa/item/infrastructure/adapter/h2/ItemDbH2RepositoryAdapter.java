@@ -57,4 +57,9 @@ public class ItemDbH2RepositoryAdapter implements ItemRepository {
         return this.itemDbH2Repository.findById(id)
                 .map(ItemEntity::toDomain);
     }
+
+    @Override
+    public Item saveItem(Item item) {
+        return this.itemDbH2Repository.save(ItemEntity.fromDomain(item)).toDomain();
+    }
 }

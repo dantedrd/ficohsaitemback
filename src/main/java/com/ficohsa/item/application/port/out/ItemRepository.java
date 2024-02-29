@@ -9,4 +9,6 @@ public interface ItemRepository {
     List<Item>
     getItemsBySearch(String search,Integer total);
     Optional<Item> getItemById(Long id);
+
+    Item saveItem(Item item);
 }

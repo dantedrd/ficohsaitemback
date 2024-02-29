@@ -84,4 +84,23 @@ public class ItemController {
                 .status(HttpStatus.OK.value())
                 .body(GenericResponse.of(HttpStatus.OK.value(),"Item encontrado con exito",responseItem));
     }
+
+    @Operation(
+            summary = "Agregar Item",
+            description = "Api de uso interno para agregar items",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "201",
+                            description = "Item Creado",
+                            content = @Content(schema = @Schema(implementation = GenericResponse.class))
+                    )
+            }
+    )
+    @PostMapping()
+    public ResponseEntity<Object> addItem(@RequestBody Item item){
+        Item responseItem=this.itemUseCase.saveItem(item);
+        return ResponseEntity
+                .status(HttpStatus.OK.value())
+                .body(GenericResponse.of(HttpStatus.OK.value(),"Item creado con exito",responseItem));
+    }
 }
