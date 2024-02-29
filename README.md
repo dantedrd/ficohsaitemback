@@ -36,7 +36,7 @@ La aplicación expone dos endpoints principales:
 2. **GET /api/v1/items/search?name=da&total=1**: Busca items por un parmetro de busqueda y muestra un total maximo dado.
    - **Respuesta**: JSON con el resultado.
 
-La documentación detallada de la API y los esquemas de solicitud y respuesta están disponibles a través de la interfaz de [Swagger](http://52.21.129.164/api/v1/swagger-ui/index.html#/).
+La documentación detallada de la API y los esquemas de solicitud y respuesta están disponibles a través de la interfaz de [Swagger](http://52.21.129.164:8081/api/v1/swagger-ui/index.html#/).
 
 ## Pruebas
 Las pruebas unitarias se pueden ejecutar mediante el comando:
