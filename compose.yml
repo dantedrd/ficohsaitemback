@@ -1,13 +1,13 @@
 version: '3'
 services:
   backend:
-    build: ./ficohsa_items_backend
+    build: ./ficohsaitemback
     ports:
       - "8081:8080"
     networks:
       - internal_network
   front:
-    build: ./ficohsa_items_front
+    build: ./ficohsaitemfront
     depends_on:
       - backend
     ports:
