@@ -17,6 +17,28 @@ Es una aplicación Spring Boot desarrollada para buscar items atraves de una API
 - **Desarrollo Guiado por el Dominio (DDD)**: Empleando un enfoque centrado en el dominio para mejorar la claridad y la lógica del negocio.
 - **Principios SOLID**: Seguidos para promover un diseño de software orientado a objetos limpio y mantenible.
 
+## Estructura de la aplicacion
+
+- **1**: La aplicacion de divide por capas las cuales son.
+- **Aplication**: en esta tendremos todos los caso de uso
+- **Dominio**: en esta tendremos todos los modelos,utilidades o servicios
+- **Infrastrutura**: En esta tendremos los controladores,repositorios,entidades
+
+como vemos en este pequeño diagrama
+
+![Diagrama](diagrama.png)
+
+## Despliegue de la aplicacion
+- **1**: La aplicacion se deplego usando una maquina ec2 de aws y usando docker.
+- **red-docker**: Se crea una red local de docker por la cual el front gracias que 
+se usa nextjs se comunica directamente con los servicios y entrega las pantallas por server y renderiza las pantallas por
+Server-side Rendering
+
+![Diagrama](infra.png)
+
+
+
+
 ## Requisitos
 - Java 17
 
